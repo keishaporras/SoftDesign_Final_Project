@@ -87,15 +87,36 @@ public class MayaPanel extends JPanel {
 
 
 
+        //Now the BOTTOM PANEL
+        JPanel bottom = new JPanel();
+        bottom.setLayout(new BoxLayout(bottom, BoxLayout.Y_AXIS));
+        bottom.setBorder(BorderFactory.createEmptyBorder(20,20,20,20));
 
+        JLabel title= new JLabel ("Account Balance");
+        title.setAlignmentX(Component.CENTER_ALIGNMENT);
 
+        totalLabel= new JLabel ("0.00");
+        totalLabel.setFont(new Font("Arial", Font.BOLD, 25));
+        totalLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
-        JLabel label = new JLabel("Maya Panel", SwingConstants.CENTER);
-        add(label, BorderLayout.CENTER);
+        JButton removeButton = new JButton("Remove Bank");
 
         JButton back = new JButton("Back");
         back.addActionListener(e -> mainFrame.showPanel("dashboard"));
 
-        add(back, BorderLayout.SOUTH);
+        bottom.add(title);
+        bottom.add(Box.createVerticalStrut(10));
+
+        bottom.add(totalLabel);
+        bottom.add(Box.createVerticalStrut(10));
+
+        bottom.add(removeButton);
+        bottom.add(Box.createVerticalStrut(10));
+        bottom.add(back);
+
+        add(bottom, BorderLayout.SOUTH);
+
+
+        updateTotal();
     }
 }
