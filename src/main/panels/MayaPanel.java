@@ -43,6 +43,31 @@ public class MayaPanel extends JPanel {
 
         add(topPanel, BorderLayout.NORTH);
 
+
+
+        JPanel center = new JPanel();
+        center.setLayout(new GridLayout(3,1,10,10));
+        center.setBorder(BorderFactory.createEmptyBorder(20,20,20,20));
+
+
+
+        //SAVINGS
+        Jpanel savingsPanel = createPanel("Savings");
+        savingsLabel= new JLabel("0.00");
+        JButton savingsButton = new JButton("Edit");
+        savingsButton.addActionListener(e -> updateSavings());
+
+        savingsPanel.add(savingsLabel, BorderLayout.CENTER);
+        savingsPanel.add(savingsButton, Borderlayout.EAST);
+
+        //ALLOWANCE
+        
+
+
+
+
+
+
         JLabel label = new JLabel("Maya Panel", SwingConstants.CENTER);
         add(label, BorderLayout.CENTER);
 
