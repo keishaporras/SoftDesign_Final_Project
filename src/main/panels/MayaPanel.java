@@ -61,7 +61,29 @@ public class MayaPanel extends JPanel {
         savingsPanel.add(savingsButton, Borderlayout.EAST);
 
         //ALLOWANCE
-        
+        JPanel allowancePanel = createPanel("Allowance");
+        allowanceLabel = new JLabel ("0.00");
+        JButton allowanceBtn = new JButton("Edit");
+        allowanceBtn.addActionListener(e-> updateAllowance());
+
+        allowancePanel.add(allowanceLabel, BorderLayout.CENTER);
+        allowancePanel.add(allowanceBtn, BorderLaypur.EASR);
+
+
+        //ADD MORE BANKS
+        JPanel addMorePanel = createPanel("Add More");
+        addMoreLabel = new JLabel ("0.00");
+        JButton addMoreBtn = new JButton("Edit");
+        addMoreBtn.addActionListener(e-> updateAllowance());
+
+        allowancePanel.add(addMoreLabel, BorderLayout.CENTER);
+        allowancePanel.add(addMoreeBtn, BorderLaypur.EASR);
+
+        center.add(savingsPanel);
+        center.add(allowancePanel);
+        center.add(addMorePanel);
+
+        add(center, BorderLayout.CENTER);
 
 
 
