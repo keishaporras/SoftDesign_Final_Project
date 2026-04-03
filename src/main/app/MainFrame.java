@@ -1,13 +1,39 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+package app;
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+import main.panels.*;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class MainFrame extends JFrame {
+
+    private CardLayout cardLayout;
+    private JPanel mainPanel;
+
+    public MainFrame() {
+        setTitle("Bank Dashboard");
+        setSize(400, 700);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+
+        // CardLayout Panel
+        cardLayout = new CardLayout();
+        mainPanel = new JPanel(cardLayout);
+
+        // Add Panels
+        mainPanel.add(new DashBoardPanel(this), "dashboard");
+        mainPanel.add(new BDOPanel(this), "bdo");
+        mainPanel.add(new BPIPanel(this), "bpi");
+        mainPanel.add(new MayaPanel(this), "maya");
+        mainPanel.add(new AboutPanel(this), "about");
+
+        add(mainPanel);
+
+        // Default screen
+        cardLayout.show(mainPanel, "dashboard");
+    }
+
+    public void showPanel(String name) {
+        cardLayout.show(mainPanel, name);
     }
 }
