@@ -1,4 +1,4 @@
-package app;
+package main.app;
 
 import main.panels.*;
 
@@ -29,7 +29,6 @@ public class MainFrame extends JFrame {
 
         add(mainPanel);
 
-        // Default screen
         cardLayout.show(mainPanel, "dashboard");
     }
 
