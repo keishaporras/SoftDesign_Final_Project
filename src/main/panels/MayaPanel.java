@@ -11,7 +11,7 @@ public class MayaPanel extends JPanel {
 
         setLayout(new BorderLayout());
 
-        JLabel label = new JLabel("BDO Panel", SwingConstants.CENTER);
+        JLabel label = new JLabel("Maya Panel", SwingConstants.CENTER);
         add(label, BorderLayout.CENTER);
 
         JButton back = new JButton("Back");
