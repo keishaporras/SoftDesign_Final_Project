@@ -25,7 +25,7 @@ public class MayaPanel extends JPanel {
         topPanel.setBackground(Color.decode("#E5E5E5"));
         topPanel.setBorder(Borderfactpry.createEmptyBorder(15, 15, 15, 15));
 
-        ImageIcon mayaIcon = new ImageIcon(getClass().getResource("/images/maya-logi.png"));
+        ImageIcon mayaIcon = new ImageIcon(getClass().getResource("/images/maya-logo.png"));
         JLabel logo = new JLabel(mayaIcon);
 
         JPanel userPanel = new JPanel();
