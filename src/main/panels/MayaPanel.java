@@ -6,10 +6,42 @@ import javax.swing.*;
 import java.awt.*;
 
 public class MayaPanel extends JPanel {
+    private JLabel savingsLabel;
+    private JLabel allowanceLabel;
+    private JLabel addMoreLabel;
+    private JLabel totalLabel;
+
+    private double savings = 0;
+    private double allowance=0;
+    private double addMore=0;
+
 
     public MayaPanel(MainFrame mainFrame) {
 
         setLayout(new BorderLayout());
+        setBackground(Color.white);
+
+        JPanel topPanel= new JPanel(new BorderLayout());
+        topPanel.setBackground(Color.decode("#E5E5E5"));
+        topPanel.setBorder(Borderfactpry.createEmptyBorder(15,15,15,15));
+
+        ImageIcon mayaIcon = new ImageIcon(getClass().getResource("/images/maya-logi.png"));
+        JLabel logo = new JLabel(mayaIcon);
+
+        JPanel userPanel = new JPanel();
+        userPanel.setLayout(new BoxLayout(userPanel, BoxLayout.Y_AXIS));
+        userPanel.setBackground(Color.decode("#E5E5E5"));
+
+        JLabel name = new JLabel("JUAN DELA CRUZ");
+        JLabel account = new JLabel("*** *** 789");
+
+        userPanel.add(name);
+        userPanel.add(account);
+
+        topPanel.add(logo, BorderLayout.WEST);
+        topPanel.add(userPanel, BorderLayout.CENTER);
+
+        add(topPanel, BorderLayout.NORTH);
 
         JLabel label = new JLabel("Maya Panel", SwingConstants.CENTER);
         add(label, BorderLayout.CENTER);
