@@ -15,6 +15,19 @@ public class AddBankPanel extends JPanel {
 
         setLayout(new GridLayout(4,2));
 
+        JTextField bankName = new JTextField();
+        JTextField accNum = new JTextField();
+
+        JButton chooseLogo = new JButton("Choose Logo");
+
+        final  String[] logoPath = {""};
+
+        chooseLogo.addActionListener(e -> {
+            JFileChooser fileChooser = new JFileChooser();
+            int result = fileChooser.showOpenDialog(null);
+
+
+        });
 
     }
 }
