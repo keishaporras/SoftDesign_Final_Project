@@ -31,6 +31,8 @@ public class AddBankPanel extends JPanel {
             }
         });
 
+        JButton confirm = new JButton("Confrim");
 
+        confirm.addActionListener();
     }
 }
