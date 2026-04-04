@@ -1,6 +1,7 @@
 package main.panels;
 
 import main.app.MainFrame;
+import main.model.Bank;
 
 import javax.swing.*;
 import java.awt.*;
@@ -27,7 +28,13 @@ public class AddBankPanel extends JPanel {
         form.setLayout(new GridLayout(5, 2, 10, 10));
         form.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
+        JTextField bankName = new JTextField();
+        JTextField accName = new JTextField();
+        JTextField accNum = new JTextField();
+        JTextField logoField = new JTextField();
 
+        form.add(new JLabel("Bank Name:"));
+        form.add(bankName);
 
     }
 }
