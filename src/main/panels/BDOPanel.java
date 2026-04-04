@@ -1,9 +1,11 @@
-package main.panels;
-import main.app.MainFrame;
+package panels;
+
+import app.MainFrame;
 import javax.swing.*;
 import java.awt.*;
 
-public class BDOPanel extends JPanel{
+public class BDOPanel extends JPanel {
+
     public BDOPanel(MainFrame mainFrame) {
         setLayout(new BorderLayout());
 

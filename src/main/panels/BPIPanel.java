@@ -1,7 +1,8 @@
-package main.panels;
-import main.app.MainFrame;
+package panels;
+import app.MainFrame;
 import javax.swing.*;
 import java.awt.*;
+
 
 public class BPIPanel extends JPanel {
     public BPIPanel(MainFrame mainFrame) {

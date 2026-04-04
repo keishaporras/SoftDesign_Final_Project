@@ -1,4 +1,4 @@
-package main.panels;
+package panels;
 
 public class DashBoardPanel {
 }

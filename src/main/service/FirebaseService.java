@@ -33,7 +33,7 @@ public class FirebaseService {
 
         FirebaseDatabase.getInstance()
                 .getReference("test")
-                .setValueAsync("Connected Successfully");
+                .setValueAsync("Connected Successfull");
 
         try {
             Thread.sleep(3000);

@@ -31,3 +31,5 @@ bin/
 
 # Firebase
 serviceAccountKey.json
+
+target/

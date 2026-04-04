@@ -1,6 +1,6 @@
-package main.app;
+package app;
 
-import main.panels.*;
+import panels.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,4 +12,9 @@ public class MainFrame {
         FirebaseService.initialize();
         FirebaseService.test();
     }
+
+    public void showPanel(String name){
+
+    }
+
 }

@@ -1,6 +1,6 @@
-package main.panels;
+package panels;
 
-import main.app.MainFrame;
+import app.MainFrame;
 import javax.swing.*;
 import java.awt.*;
 
