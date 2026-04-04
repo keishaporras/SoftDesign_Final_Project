@@ -1,15 +1,15 @@
-package main.app;
+cardLayout = new CardLayout();
+mainPanel = new JPanel(cardLayout);
 
-import main.panels.*;
+        mainPanel.add(new DashBoardPanel(this), "Dashboard");
+        mainPanel.add(new BDOPanel(this), "BDO");
+        mainPanel.add(new BPIPanel(this), "BPI");
+        mainPanel.add(new MayaPanel(this), "Maya");
+        mainPanel.add(new AboutPanel(this), "About");
+        mainPanel.add(new DashBoardPanel(this), "dashboard");
+        mainPanel.add(new BDOPanel(this), "bdo");
+        mainPanel.add(new BPIPanel(this), "bpi");
+        mainPanel.add(new MayaPanel(this), "maya");
+        mainPanel.add(new AboutPanel(this), "about");
 
-import javax.swing.*;
-import java.awt.*;
-
-import main.service.FirebaseService;
-
-public class MainFrame {
-    public static void main(String[] args) {
-        FirebaseService.initialize();
-        FirebaseService.test();
-    }
-}
+add(mainPanel);
