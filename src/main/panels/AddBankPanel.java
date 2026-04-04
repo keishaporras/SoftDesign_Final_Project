@@ -45,9 +45,9 @@ public class AddBankPanel extends JPanel {
         form.add(new JLabel("Select Logo:"));
         form.add(logoField);
 
-        JButton confirm = new JButton("Confirm");
+        JButton add = new JButton("ADD");
         form.add(new JLabel(""));
-        form.add(confirm);
+        form.add(add);
 
         JButton back = new JButton("Back");
         back.addActionListener(e -> mainFrame.showPanel("dashboard"));
