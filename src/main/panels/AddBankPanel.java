@@ -26,8 +26,11 @@ public class AddBankPanel extends JPanel {
             JFileChooser fileChooser = new JFileChooser();
             int result = fileChooser.showOpenDialog(null);
 
-
+            if(result == JFileChooser.APPROVE_OPTION){
+                logoPath[0] = fileChooser.getSelectedFile().getAbsolutePath();
+            }
         });
+
 
     }
 }
