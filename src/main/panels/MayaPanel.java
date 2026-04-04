@@ -1,7 +1,7 @@
 package main.panels;
 
 public class MayaPanel extends JPanel {
-    private Jlabel savingsLabel;
+    private z savingsLabel;
     private Jlabel allowanceLabel;
     private Jlabel addMoreLabel;
     private Jlabel totalLabel;
