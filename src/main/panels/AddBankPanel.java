@@ -13,45 +13,8 @@ public class AddBankPanel extends JPanel {
     public  AddBankPanel(MainFrame mainFrame){
         this.mainFrame = mainFrame;
 
-        JPanel header = new JPanel();
-        header.setBackground(Color.decode("C4B98B"));
-        header.setPreferredSize(new Dimension(400,80));
+        setLayout(new GridLayout(4,2));
 
-        JLabel title = new JLabel("ADD BANK");
-        title.setFont(new Font("Arial", Font.BOLD, 24));
-        title.setForeground(Color.WHITE);
 
-        header.add(title);
-        add(header, BorderLayout.NORTH);
-
-        JPanel form = new JPanel();
-        form.setLayout(new GridLayout(5, 2, 10, 10));
-        form.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
-
-        JTextField bankName = new JTextField();
-        JTextField accName = new JTextField();
-        JTextField accNum = new JTextField();
-        JTextField logoField = new JTextField();
-
-        form.add(new JLabel("Bank Name:"));
-        form.add(bankName);
-
-        form.add(new JLabel("Account Name:"));
-        form.add(accName);
-
-        form.add(new JLabel("Account Number:"));
-        form.add(accNum);
-
-        form.add(new JLabel("Select Logo:"));
-        form.add(logoField);
-
-        JButton add = new JButton("ADD");
-        form.add(new JLabel(""));
-        form.add(add);
-
-        JButton back = new JButton("Back");
-        back.addActionListener(e -> mainFrame.showPanel("dashboard"));
-
-        add(back, BorderLayout.SOUTH);
     }
 }
