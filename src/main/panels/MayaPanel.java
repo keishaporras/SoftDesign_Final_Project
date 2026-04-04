@@ -124,14 +124,35 @@ public class MayaPanel extends JPanel {
     }
 
     private void updateSavings() {
+        String input = JOptionPane.showInputDialog("Savings Amount: ");
+        if (input!= null){
+            savings= Double.parseDouble(input);
+            savingsLabel.setText("PHP" + savings);
+
+            updateTotal();
+        }
 
     }
 
     private void updateAllowance() {
+        String input = JOptionPane.showInputDialog("Allowance Amount: ");
+        if (input!= null){
+            allowance= Double.parseDouble(input);
+            allowanceLabel.setText("PHP" + allowance);
+
+            updateTotal();
+        }
 
     }
 
     private void updateAddMore() {
+        String input = JOptionPane.showInputDialog("Amount: ");
+        if (input!= null){
+            addMore= Double.parseDouble(input);
+            addMoreLabel.setText("PHP" + addMore);
+
+            updateTotal();
+        }
 
     }
 
