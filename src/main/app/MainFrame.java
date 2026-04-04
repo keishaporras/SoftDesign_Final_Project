@@ -25,7 +25,7 @@ public class MainFrame extends JFrame {
         mainPanel.add(new BPIPanel(this), "bpi");
         mainPanel.add(new MayaPanel(this), "maya");
         mainPanel.add(new AboutPanel(this), "about");
-        mainPanel.add(new AddBank(this), "addbank");
+        mainPanel.add(new AddBankPanel(this), "addbank");
 
         add(mainPanel);
 
