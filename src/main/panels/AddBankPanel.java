@@ -36,5 +36,16 @@ public class AddBankPanel extends JPanel {
         form.add(new JLabel("Bank Name:"));
         form.add(bankName);
 
+        form.add(new JLabel("Account Name:"));
+        form.add(accName);
+
+        form.add(new JLabel("Account Number:"));
+        form.add(accNum);
+
+        form.add(new JLabel("Select Logo:"));
+        form.add(logoField);
+
+
+
     }
 }
