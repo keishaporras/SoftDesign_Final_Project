@@ -56,7 +56,7 @@ public class MayaPanel extends JPanel {
         savingsButton.addActionListener(e -> updateSavings());
 
         savingsPanel.add(savingsLabel, BorderLayout.CENTER);
-        savingsPanel.add(savingsButton, Borderlayout.EAST);
+        savingsPanel.add(savingsButton, BorderLayout.EAST);
 
         //ALLOWANCE
         JPanel allowancePanel = createPanel("Allowance");
