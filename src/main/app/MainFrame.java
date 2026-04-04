@@ -5,7 +5,7 @@ import panels.*;
 import javax.swing.*;
 import java.awt.*;
 
-import main.service.FirebaseService;
+import service.FirebaseService;
 
 public class MainFrame {
     public static void main(String[] args) {
